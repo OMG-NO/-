@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">高考联盟</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--长按保存图片时的提示-->
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_failed">保存失败</string>
+    <string name="save_picture_success"></string>
+
+    <!--测试内容-->
+    <string name="text"></string>
+
+    <string name="text_option">
+    </string>
+</resources>

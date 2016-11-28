@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_knowledge_point_practice"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jredu.tk.activity.KnowledgePointPracticeActivity">
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bar_back_normal"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <ImageView
+            android:id="@+id/split"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/go_back"
+            android:src="@mipmap/theme_personal_center_top_line"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:background="@drawable/radio_group_bg">
+
+            <RadioButton
+                android:id="@+id/small_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="小题练习"
+                android:textColor="#000000"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/big_example"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button"
+                android:button="@null"
+                android:gravity="center"
+                android:text="大题精讲"
+                android:textColor="#000000"
+                android:textSize="15sp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_below="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/intelligence_practice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="智能练习"
+            android:textColor="#ddd"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:background="#6666ff"/>
+    </LinearLayout>
+</RelativeLayout>

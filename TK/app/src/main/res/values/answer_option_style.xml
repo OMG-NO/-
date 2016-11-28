@@ -1,0 +1,15 @@
+<resources>    
+    <!--为选项中的 外部LinearLayout添加样式-->
+    <style name="answer_option__lin_style">
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    
+    <!--为选项选项图片添加样式-->
+    <style name="answer_option_A_style">
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    
+    <style name="answer_option_img_style">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+</resources>

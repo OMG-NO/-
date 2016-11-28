@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ability_analysis"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jredu.tk.activity.AbilityAnalysisActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/split">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/bar_back_normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/img_back"
+            android:text="能力测评"
+            android:textColor="#333"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <com.jredu.tk.help.RadoView
+        android:id="@+id/rv"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_below="@id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_best"
+        android:textColor="@color/colorTheme"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"/>
+</RelativeLayout>

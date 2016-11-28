@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jredu.tk.help.MySlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".activity.MainActivity">
+
+    <LinearLayout
+        android:background="#fff"
+        android:id="@+id/ll_left"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <fragment
+            android:id="@+id/fragment_left"
+            android:name="com.jredu.tk.fragment.LeftMainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            android:id="@+id/fragment_main"
+            android:name="com.jredu.tk.fragment.MainFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</com.jredu.tk.help.MySlidingPaneLayout>
